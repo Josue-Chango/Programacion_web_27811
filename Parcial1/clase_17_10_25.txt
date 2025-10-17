@@ -1,0 +1,10 @@
+heade -< cabeceras
+body para item
+footer para calculos
+
+table-head para titulos
+table-body
+table-foooter
+
+td para filas superiores
+tr para iniciar
