@@ -1,0 +1,14 @@
+Elementos semanticos en html5
+
+div, spam, 
+
+header, article, nav, footer = explican proposito del texto
+
+header = encabezado
+nav = navegacion, menu de enlaces
+main = se pone contenido principal o central
+section = agrupacion temática del contenido
+article = contenido tipo articulo
+aside= informacion complementaria
+footer = informaciona al final de la pagina
+

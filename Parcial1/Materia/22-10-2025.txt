@@ -1,0 +1,20 @@
+formularios web
+
+columna vertebral de la interaccion bidireccional en world wide web
+
+    <form action="procesar_formmulario.php" method="post">
+
+    </form>
+
+elementos de entrada <input>
+    versatil para crear tipos de campos de entradas de datos
+
+text -> campo de texto de una sola linea para entradas como nombres, correos, etc
+    <label for="nombre">nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+
+placeholder texto de ayuda dentro delcampo que desaparece cuando el usuario comienza a escribir
+
+<label for="contrasena"<COntraseña>
+
+radio -> crea botones de opcion
