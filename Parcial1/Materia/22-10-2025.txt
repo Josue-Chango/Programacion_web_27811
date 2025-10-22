@@ -18,3 +18,5 @@ placeholder texto de ayuda dentro delcampo que desaparece cuando el usuario comi
 <label for="contrasena"<COntraseña>
 
 radio -> crea botones de opcion
+
+checkbox crea casillas de verificacion
