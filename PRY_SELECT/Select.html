@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto select</title>
+</head>
+<body>
+    <header>
+        <h1>
+            SELECT EN FORMULARIOS
+        </h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+
+            <fieldset>
+
+            <!-- Select para form -->
+             <label for="lenguaje_programacion">
+                SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO
+             </label>
+             <select name="lenguaje_programacion" id="lenguaje_programacion">
+                <option value="c_mas_mas">
+                    c++
+                </option>
+                <option value="java">
+                    JAVA
+                </option>
+                <option value="python">
+                    PYTHON
+                </option>
+                <option value="HOTML" disabled>
+                    HTML
+                </option>
+             </select>
+             <input type="date">
+             </fieldset>
+             <br>
+
+            <!-- SELECTO PARA FORM-->
+             <label for="musica_favorita">
+                SELECCIONA TU MUSICA FAVORITA
+             </label>
+             <select name="muscia_favorita[]" id="musica_favorita" multiple required size="2" autofocus >
+
+                <optgroup title="REGUETON" label="REGUETON">
+                    <option value="Sufre Mamon">Hombres G</option>
+                    <option value="Ella">Paulo Londra</option>
+                    <option value="Sufre">Clásica</option>
+                    <option value="regueton">Reguetón</option>
+                    <option value="metal">Metal</option>
+                    <option value="punk">Punk</option>
+                </optgroup>
+
+                <optgroup title="CHICHA" label="CHICHA">
+                    <option value="Sufre Mamon">Hombres G</option>
+                    <option value="Ella">Paulo Londra</option>
+                    <option value="Sufre">Clásica</option>
+                    <option value="regueton">Reguetón</option>
+                    <option value="metal">Metal</option>
+                    <option value="punk">Punk</option>
+                </optgroup>
+                
+            </select>
+
+            <br>
+
+            <!-- TEXTAREA PARA FORM -->
+
+            <label for="frase_motivadora">
+                INGRESE SU FRASE MOTIVADORA
+            </label>
+            <textarea name="frase_motivadora" id="frase_motivadora" cols="10" rows="5">BUENOS DIAS</textarea>
+
+            <br>
+
+            <!-- HIDDEN -->
+
+            <input type="hidden" name="cedula usuario" value="1710753144">
+
+            <button type="submit">
+                ENVIAR AL SERVIDOR
+            </button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>    
+</body>
+</html>
