@@ -1,0 +1,32 @@
+css hojas de estilol en cascada
+
+sitnasis
+selector{
+    propiedad1: vslor1;
+    propiedad2: valor2;
+}
+
+ejemplo
+body{
+    front-famili: Arual, sans serif;
+    background-color :#f0f0f0;
+}
+
+h1{
+    color:navy;
+    text-align; center;   ---> elementos centrados
+}
+propiedad y valor
+
+selector universal "*"
+
+delector por tipo o etiqueta p{color:gray;}
+
+selector de clase = class="importante"    ---->  .destacado {front-weight: bold;}
+
+selector por ID ---> id="encabezado_principal"   ---->  #encabezado_principal {background-color: lightgray;}
+
+selector por atributo input[type="text"]
+
+selectores agrupados   --->   h1,h2,h3{front-family: `gergory`;}
+

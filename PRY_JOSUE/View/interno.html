@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        INTERNO
+    </title>
+    <style>
+
+        .nombre{
+            bottom: 20px;
+            border-radius: 500px;
+        }
+        .radio{
+            align-self: flex-end;
+            --form-control-color: rebeccapurple
+        }
+        .area{
+            font-family: Arial;
+            resize: horizontal;
+        }
+        .apellido{
+            margin: 80px;
+        }
+
+        .select{
+            padding: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 class="nombre">
+        Nombre
+    </h1>
+    <!-- nombre  input-->
+    <label for="nombres" class="nombre">
+        Ingrese sus nombres: 
+    </label>
+    <input  class="nombre"
+        type="text" 
+        name="nombres" 
+        id="nombres"
+        placeholder="Ejemplo Josue"
+        maxlength="20"
+        required
+        pattern="[a-z]{20}"
+    >
+    <br>
+
+    <!-- apellido checkbock-->
+
+    <label for="ap" class="apellido">chango</label>
+    <input type="checkbox" name="materias[]" id="ap" value="ap" class="apellido">
+    <label for="ap" class="apellido">PEREZ</label>
+    <input type="checkbox" name="materias[]" id="ap" value="ap" class="apellido">
+    <br>
+    <br>
+
+    <!-- area -->
+    <label for="area">
+        area
+    </label>
+    <textarea 
+        class="area"
+        placeholder="escriba"
+    >
+    </textarea>
+    <br>
+
+    <!--  select-->
+    <select 
+        name="carrera" 
+        id="carrera"
+        required
+        class="select"
+    >
+        <option value="SOFTWARE"  selected>SOFTWARE</option>
+        <option value="TICS"  selected>TICS</option>
+        <option value="MEDICINA"  selected>MEDICINA</option>
+        <option value="INDUSTRIAL"  selected>INDUSTRIAL</option>
+        <option value="CIVIL"  selected>CIVIL</option>
+    </select>
+    <br>
+    <!-- genero radio -->
+    <label for="hombre" class="radio">
+                HOMBRE
+            </label>
+            <input 
+                class="radio"
+                type="radio" 
+                name="genero" 
+                id="hombre" 
+                value="hombre"
+            >
+            <label for="mujer" class="radio">
+                MUJER
+            </label>
+            <input 
+                class="radio"
+                type="radio" 
+                name="genero" 
+                id="mujer" 
+                value="mujer"
+            >
+</body>
+</html>
