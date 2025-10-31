@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        EXTERNO
+    </title>
+    <link rel="stylesheet" href="../public/css/estilos.css">
+</head>
+<body>
+
+    <table border="3">
+        <tr>
+            <th colspan="4" class="nombre">
+                EXTERNO
+            </th>
+        </tr>
+        <tr>
+            <!-- nombre  input-->
+            <td>
+                <label for="nombres" class="nombre" >
+                    Ingrese sus nombres: 
+                </label>
+            </td>
+            <td>
+                <input  
+                    type="text" 
+                    name="nombres" 
+                    id="nombres"
+                    placeholder="Ejemplo Josue"
+                    maxlength="20"
+                    required
+                    pattern="[a-z]{20}"
+                    class="nombre"
+                >
+            </td>
+
+            <!-- area -->
+            <td>
+                 <label for="area" class="area">
+                    area
+                </label>
+            </td>
+            <td>
+                <textarea 
+                class="area"
+                placeholder="escriba"
+            >
+            </textarea>
+            </td>
+        </tr>
+        <tr>
+            <!-- apellido checkbock-->
+            <td colspan="4">
+                <label for="CHANGO1" class="apellido">CHANGO</label>
+                <input type="checkbox" name="materias[]" id="CHANGO1" value="CHANGO1" class="apellido">
+                <label for="PEREZ1" class="apellido">PEREZ</label>
+                <input type="checkbox" name="materias[]" id="PEREZ1" value="PEREZ1" class="apellido">
+            </td>
+        </tr>
+        <tr>
+            <!--  select-->
+            <td >
+                <select 
+                    name="carrera" 
+                    id="carrera"
+                    required
+                    class="select"
+                >
+                    <option value="SOFTWARE" class="select" selected>SOFTWARE</option>
+                    <option value="TICS" class="select" selected>TICS</option>
+                    <option value="MEDICINA" class="select" selected>MEDICINA</option>
+                    <option value="INDUSTRIAL" class="select" selected>INDUSTRIAL</option>
+                    <option value="CIVIL" class="select" selected>CIVIL</option>
+                </select>
+            </td>
+            <!-- genero radio -->
+            <td colspan="3">
+                <label for="hombre" class="radio">
+                    HOMBRE
+                </label>
+                <input 
+                    class="radio"
+                    type="radio" 
+                    name="genero" 
+                    id="hombre" 
+                    value="hombre"
+                >
+                <label for="mujer" class="radio" >
+                    MUJER
+                </label>
+                <input 
+                    class="radio"
+                    type="radio" 
+                    name="genero" 
+                    id="mujer" 
+                    value="mujer"
+                >
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
