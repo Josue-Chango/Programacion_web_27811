@@ -1,0 +1,41 @@
+.nombre{
+    margin-bottom: 100px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: blue;
+    display:flow-root;
+}
+.radio{
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+.area{
+    letter-spacing: 25px;
+    overflow: hidden;
+    line-height: 50px;
+    color-scheme: dark;
+    outline:invert;
+    max-width: 600px;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 200px;
+}
+.apellido{
+    font-weight: bold;
+    max-width: 400px;
+    min-width: 100px;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform:lowercase;
+    color: green;
+}
+.select{
+    direction: ltr;
+    margin-bottom: 200px;
+    position:relative;
+    top:100px;
+    left: 10px;
+    cursor: pointer;
+}

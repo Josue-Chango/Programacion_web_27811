@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        INTERNO
+    </title>
+    <style>
+
+        .nombre{
+            text-align: center;
+            bottom: 20px;
+            border-radius: 500px;
+        }
+        .radio{
+            text-align: center;
+            align-self: flex-end;
+            --form-control-color: red;
+            cursor: help;
+        }
+        .area{
+            text-align: center;
+            font-family: Arial;
+            resize: horizontal;
+        }
+        .apellido{
+            text-align: center;
+            margin: 80px;
+            accent-color: orangered;
+        }
+
+        .select{
+            text-align: center;
+            padding: 100px;
+            background-image: url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 60px;
+            padding-left: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <table border="3">
+        <tr>
+            <th colspan="4" class="nombre">
+                INTERNO
+            </th>
+        </tr>
+        <tr>
+            <!-- nombre  input-->
+            <td>
+                <label for="nombres" class="nombre">
+                    Ingrese sus nombres: 
+                </label>
+            </td>
+            <td>
+                <input  class="nombre"
+                    type="text" 
+                    name="nombres" 
+                    id="nombres"
+                    placeholder="Ejemplo Josue"
+                    maxlength="20"
+                    required
+                    pattern="[a-z]{20}"
+                >
+            </td>
+
+            <!-- area -->
+            <td>
+                 <label for="area">
+                    area
+                </label>
+            </td>
+            <td>
+                <textarea 
+                class="area"
+                placeholder="escriba"
+            >
+            </textarea>
+            </td>
+        </tr>
+        <tr>
+            <!-- apellido checkbock-->
+            <td colspan="4">
+                <label for="CHANGO1" class="apellido">CHANGO</label>
+                <input type="checkbox" name="materias[]" id="CHANGO1" value="CHANGO1" class="apellido">
+                <label for="PEREZ1" class="apellido">PEREZ</label>
+                <input type="checkbox" name="materias[]" id="PEREZ1" value="PEREZ1" class="apellido">
+            </td>
+        </tr>
+        <tr>
+            <!--  select-->
+            <td >
+                <select 
+                    name="carrera" 
+                    id="carrera"
+                    required
+                    class="select"
+                >
+                    <option value="SOFTWARE"  selected>SOFTWARE</option>
+                    <option value="TICS"  selected>TICS</option>
+                    <option value="MEDICINA"  selected>MEDICINA</option>
+                    <option value="INDUSTRIAL"  selected>INDUSTRIAL</option>
+                    <option value="CIVIL"  selected>CIVIL</option>
+                </select>
+            </td>
+            <!-- genero radio -->
+            <td colspan="3">
+                <label for="hombre" class="radio">
+                    HOMBRE
+                </label>
+                <input 
+                    class="radio"
+                    type="radio" 
+                    name="genero" 
+                    id="hombre" 
+                    value="hombre"
+                >
+                <label for="mujer" class="radio">
+                    MUJER
+                </label>
+                <input 
+                    class="radio"
+                    type="radio" 
+                    name="genero" 
+                    id="mujer" 
+                    value="mujer"
+                >
+            </td>
+        </tr>
+    </table>
+    
+    <!--  -->
+            <hr><hr><hr>
+
+    <table border="3">
+        <tr>
+            <th colspan="4" >
+                EN LINEA
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <!-- nombre  input-->
+                <label for="nombres"  >
+                    Ingrese sus nombres: 
+                </label>
+            </td>
+            <td>
+                <input  
+                    type="text" 
+                    name="nombres" 
+                    id="nombres"
+                    placeholder="Ejemplo Josue"
+                    maxlength="20"
+                    required
+                    pattern="[a-z]{20}"
+                    style="background-color: aqua;" ;
+                >
+            </td>
+            <td colspan="2">
+                 <!-- apellido checkbock-->
+                <label for="chango" >chango</label>
+                <input type="checkbox" name="materias[]" id="chango" value="chango" style="accent-color: blue;">
+                <label for="PEREZ" >PEREZ</label>
+                <input type="checkbox" name="materias[]" id="PEREZ" value="PEREZ" style="opacity: 0.3;">
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <!--  select-->
+                <select 
+                    name="carrera" 
+                    id="carrera"
+                    required
+                    style="direction:rtl;"
+                >
+                    <option value="SOFTWARE"  selected>SOFTWARE</option>
+                    <option value="TICS"  selected>TICS</option>
+                    <option value="MEDICINA"  selected>MEDICINA</option>
+                    <option value="INDUSTRIAL"  selected>INDUSTRIAL</option>
+                    <option value="CIVIL"  selected>CIVIL</option>
+                </select>
+            </td>
+            <td>
+                <!-- genero radio -->
+                <label for="hombre" >
+                    HOMBRE
+                </label>
+                <input 
+                    
+                    type="radio" 
+                    name="genero" 
+                    id="hombre" 
+                    value="hombre"
+                    style="box-shadow: 0 0 5px black;"
+                >
+                <label for="mujer" >
+                    MUJER
+                </label>
+                <input 
+                    
+                    type="radio" 
+                    name="genero" 
+                    id="mujer" 
+                    value="mujer"
+                    style="cursor:crosshair;"
+                >
+            </td>
+            <td>
+                <!-- area -->
+                <label for="area">
+                    area
+                </label>
+                <textarea 
+                    style="resize:vertical;"
+                    placeholder="escriba"
+                >
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <br>
+    
+    <br>
+    
+    
+</body>
+</html>
