@@ -1,0 +1,68 @@
+body {
+    background-color: #c8953e;
+}
+
+/* top, bottom, left, right no afectan al tamaño de la caja*/
+.caja-static{
+    position: static;
+    background-color: chocolate;
+    margin: 2px 2px 2px 2px;
+    padding: 5px;
+}
+
+.caja-relative{
+    position: relative;
+    background-color: red;
+    margin: 2px 2px 2px 2px;
+    padding: 5px;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.contenedor{
+    position: relative;
+    background-color: black;
+    width: 500px;
+    height: 100px;
+}
+
+.caja-absolute{
+    position: absolute;
+    background-color: white;
+    
+}
+
+.caja-fixed{
+    position:fixed;
+    background-color: blue;
+    top: 10px;
+    right: 10px;
+}
+
+.whatsapp{
+    position: fixed;
+    background-color: green;
+    bottom: 15px;
+    left: 15px;
+}
+
+.custom {
+    position: fixed;
+    background-color: rgb(76, 76, 199);
+    color: white;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50px;
+    font-size: 9px;
+    font-family: arial;
+    padding: 10px 15px 10px 35px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-image: url('https://e7.pngegg.com/pngimages/53/410/png-clipart-pencil-computer-icons-drawing-icon-design-pencil-angle-web-design-thumbnail.png');
+    background-size: 16px 16px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}

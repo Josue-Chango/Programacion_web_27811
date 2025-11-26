@@ -39,3 +39,7 @@
     left: 10px;
     cursor: pointer;
 }
+
+body{
+    align-items: center;
+}

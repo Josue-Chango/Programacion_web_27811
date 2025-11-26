@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Factura de compra
+    </title>
+</head>
+<body>
+    <h1>
+        Formulario cliente
+    </h1>
+    <form action="factura.html" method="get">
+        <table border="3">
+            <thead>
+                <tr>
+                    <th colspan="4" >
+                        DATOS DEL CLIENTE
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Nombres:
+                    </td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="nombress" 
+                            id="nombres"
+                            placeholder="Ejemplo Chango"
+                            maxlength="20"
+                        >
+                    </td>
+                    <td>
+                        Apellidos:
+                    </td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="apellidoss" 
+                            id="apellidos"
+                            placeholder="Ejemplo Chango"
+                            maxlength="20"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Cedula:
+                    </td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="cedula" 
+                            id="cedula"
+                            placeholder="Ejemplo 1723456789-001"
+                            maxlength="14"
+                            minlength="10"
+                        >
+                    </td>
+                    <td>
+                        Fecha de nacimiento:
+                    </td>
+                    <td>
+                        <input 
+                            type="date" 
+                            name="fecha_nacimiento" 
+                            id="fecha_nacimiento"
+                            max="2025-10-22"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Genero: 
+                    </td>
+                    <th colspan="3">
+                        <label for="hombre">
+                            Hombre
+                        </label>
+                        <input 
+                            type="radio" 
+                            name="genero" 
+                            id="hombre" 
+                            value="hombre"
+                        >
+                        <label for="mujer">
+                            Mujer
+                        </label>
+                        <input 
+                            type="radio" 
+                            name="genero" 
+                            id="mujer" 
+                            value="mujer"
+                        >
+                        <label for="otro">
+                            Otro
+                        </label>
+                        <input 
+                            type="radio" 
+                            name="genero" 
+                            id="otro" 
+                            value="otro"
+                        >
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Dirección:
+                    </td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="direccion" 
+                            id="direccion"
+                            placeholder="Ejemplo Av. 2 Diciembre"
+                            maxlength="50"
+                        >
+                    </td>
+                    <td>
+                        Postal:
+                    </td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="postal" 
+                            id="postal"
+                            placeholder="Ejemplo 170150"
+                            maxlength="6"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Pais:
+                    </td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="pais" 
+                            id="pais"
+                            placeholder="Ejemplo Ecuador"
+                            maxlength="20"
+                        >
+                    </td>
+                    <td>
+                        Ciudad:
+                    </td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="ciudad" 
+                            id="ciudad"
+                            placeholder="Ejemplo Quito"
+                            maxlength="20"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Teléfono:
+                    </td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="telefono" 
+                            id="telefono"
+                            placeholder="Ejemplo 0999999999"
+                            maxlength="10"
+                        >
+                    </td>
+                    <td>
+                        Celular:
+                    </td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="celular" 
+                            id="celular"
+                            placeholder="Ejemplo 0999999999"
+                            maxlength="10"
+                        >
+                </tr>
+                <tr>
+                    <td>
+                        email:
+                    </td>
+                    <td>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            placeholder="ejemplo@espe.edu.ec"
+                        >
+                    </td>
+                    <td>
+                        Fecha de hoy:
+                    </td>
+                    <td>
+                        <input 
+                            type="date" 
+                            name="fecha_hoy" 
+                            id="fecha_hoy"
+                        >
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        Seleccione foto de perfil:
+                    </td>
+                    <th colspan="3">
+                        <input 
+                            type="file" 
+                            name="foto" 
+                            id="foto"
+                            accept="aplication/jpg"
+                        >
+                    </th>
+                    
+                </tr>
+                <tr>
+                    <th colspan="4">
+                        <input 
+                            type="submit" 
+                            value="Enviar datos"
+                        >
+                        <input 
+                            type="reset" 
+                            value="Borrar datos"
+                        >
+                    </th>
+                </tr>
+            </tfoot>     
+        </table>
+    </form>
+    
+</body>
+</html>
