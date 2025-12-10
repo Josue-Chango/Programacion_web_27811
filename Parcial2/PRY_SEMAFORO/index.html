@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Semaforo con condiciones
+    </title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark">
+
+    <div class="container p-5">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="color" id="radio_rojo" value="rojo">
+            <label class="form-check-label bg-danger" for="radio_rojo">
+                ROJO
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="color" id="radio_amarillo" value="amarillo" >
+            <label class="form-check-label bg-warning" for="radio_amarillo">
+                AMARILLO
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="color" id="radio_verde" value="verde" >
+            <label class="form-check-label bg-success" for="radio_verde">
+                VERDE
+            </label>
+        </div>
+    </div>
+
+
+    <h1 class="text-white" id="txt_resultado">
+        
+    </h1>
+
+    
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="./public/js/semaforo.js"></script> -->
+    <script src="./public/js/semaforo_if.js"></script>
+</body>
+
+</html>
