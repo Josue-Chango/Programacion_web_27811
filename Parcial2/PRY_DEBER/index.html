@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Asistencia</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/personalizado.css">
+</head>
+
+<body class="bg-dark text-white">
+
+    <header>
+
+    </header>
+    <main class="container mt-5">
+        <h1 class="text-center mb-4">
+            Control de Asistencia
+        </h1>
+
+        <div class="input-group">
+            <input 
+                type="number"
+                id="nuevoElemento"
+                class="form-control"
+                placeholder="Ingrese matrícula del estudiante">
+            <button id="agregar" class="btn btn-success">
+                Registrar asistencia
+            </button>
+        </div>
+
+        <p id="contador" class="text-center mt-3"></p>
+
+        <ul id="lista" class="list-group mt-3"></ul>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>
